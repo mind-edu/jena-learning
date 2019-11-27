@@ -1,4 +1,4 @@
-package com.jeanlearning.tdb;
+package com.jenalearning.tdb;
 
 
 import org.apache.jena.query.*;
@@ -8,14 +8,14 @@ import org.apache.jena.tdb.TDBFactory;
 
 /**
  * 查询数据库示例，运行的前提条件是
- *
+ * <p>
  * 1. 运行TDBDatasetExample，创建了TDB数据，保存在根目录下的dataset
  * 2. 再使用tdbloader导入data目录下的sparql-example.ttl到TDB数据库中
  */
 
 public class TDBQueryExample {
 
-    public static void query(Model m){
+    public static void query(Model m) {
         // 编写查询语句，
         String queryString = "SELECT ?mbox " +
                 "WHERE { " +
@@ -36,7 +36,7 @@ public class TDBQueryExample {
         }
     }
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         // 建立连接
         Dataset dataset = TDBFactory.createDataset("dataset");
 

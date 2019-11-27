@@ -1,22 +1,18 @@
-package com.jeanlearning.rdf;
+package com.jenalearning.rdf;
 
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 
-import java.io.*;
+import java.io.InputStream;
 
 public class RDFRead {
 
     private static String fileName = "data/example.rdf";
     private Model model;
 
-    public Model getModel(){
-        return this.model;
-    }
-
-    public RDFRead(){
+    public RDFRead() {
         this.model = ModelFactory.createDefaultModel();
         InputStream in = FileManager.get().open(fileName);
 
@@ -26,10 +22,14 @@ public class RDFRead {
         model.read(in, "");
     }
 
-    public static void main(String []args){
+    public static void main(String[] args) {
 
         Model model = new RDFRead().getModel();
 
         model.write(System.out);
+    }
+
+    public Model getModel() {
+        return this.model;
     }
 }

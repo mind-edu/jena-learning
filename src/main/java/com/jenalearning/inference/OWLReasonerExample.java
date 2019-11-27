@@ -19,13 +19,13 @@ public class OWLReasonerExample {
 
     // 辅助函数，打印三元组
     public static void printStatements(Model m, Resource s, Property p, Resource o) {
-        for(StmtIterator i = m.listStatements(s, p, o); i.hasNext(); ){
+        for (StmtIterator i = m.listStatements(s, p, o); i.hasNext(); ) {
             Statement stmt = i.nextStatement();
             System.out.println("-" + PrintUtil.print(stmt));
         }
     }
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
         // 加载预订好的模式（定义computer和computer的子类以及拥有的属性）
         // 可以将其视为本体库
         Model schema = FileManager.get().loadModel("data/owlDemoSchema.owl");
@@ -64,7 +64,7 @@ public class OWLReasonerExample {
         System.out.println("示例2： 实例识别");
         Resource gamingComputer = inf.getResource("urn:x-hp:eg/GamingComputer");
         Resource whiteBox = inf.getResource("urn:x-hp:eg/whiteBoxZX");
-        if(inf.contains(whiteBox, RDF.type, gamingComputer)) {
+        if (inf.contains(whiteBox, RDF.type, gamingComputer)) {
             System.out.println("White box recognized as gaming computer");
         } else {
             System.out.println("Failed to recognize white box correctly");
@@ -77,12 +77,12 @@ public class OWLReasonerExample {
          */
         System.out.println("示例2： 逻辑一致性检测");
         ValidityReport validity = inf.validate();
-        if(validity.isValid()) {
+        if (validity.isValid()) {
             System.out.println("ok");
         } else {
             System.out.println("Conflicts");
-            for(Iterator i = validity.getReports(); i.hasNext(); ) {
-                ValidityReport.Report report = (ValidityReport.Report)i.next();
+            for (Iterator i = validity.getReports(); i.hasNext(); ) {
+                ValidityReport.Report report = (ValidityReport.Report) i.next();
                 System.out.println(" - " + report);
             }
         }

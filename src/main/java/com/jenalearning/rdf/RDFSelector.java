@@ -1,4 +1,4 @@
-package com.jeanlearning.rdf;
+package com.jenalearning.rdf;
 
 
 import org.apache.jena.rdf.model.Model;
@@ -9,7 +9,7 @@ public class RDFSelector {
 
     static final String johnSmith = "http://somewhere/JohnSmith/";
 
-    public static void main(String []args){
+    public static void main(String[] args) {
 
         Model model = new RDFRead().getModel();
 
@@ -27,8 +27,6 @@ public class RDFSelector {
         // 添加为john smith添加昵称资源
         vcard.addProperty(VCARD.NICKNAME, "Smithy")
                 .addProperty(VCARD.NICKNAME, "Adman");
-
-
 
 
     }

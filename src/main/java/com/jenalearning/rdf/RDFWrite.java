@@ -1,4 +1,4 @@
-package com.jeanlearning.rdf;
+package com.jenalearning.rdf;
 
 
 import org.apache.jena.rdf.model.InfModel;
@@ -17,14 +17,13 @@ import java.io.IOException;
 
 /**
  * 将InfModel数据写入文件中
- *
  */
 public class RDFWrite {
 
-    public static void main(String []args) throws IOException {
+    public static void main(String[] args) throws IOException {
         // 创建一个文件
         File f = new File("data/infmodel.ttl");
-        if(f.exists() == false) {
+        if (f.exists() == false) {
             f.createNewFile();
         }
         // 通过文件对象创建输出流

@@ -1,4 +1,4 @@
-package com.jeanlearning.rdf;
+package com.jenalearning.rdf;
 
 
 import org.apache.jena.rdf.model.Model;
@@ -14,11 +14,7 @@ public class RDFBasis {
     private String familyName = "Smith";
     private Model model;
 
-    public Model getModel(){
-        return this.model;
-    }
-
-    public RDFBasis(){
+    public RDFBasis() {
         this.model = ModelFactory.createDefaultModel();
 
         Resource johnSmith = model.createResource(personURI);
@@ -33,5 +29,9 @@ public class RDFBasis {
 
         Model model = new RDFBasis().getModel();
         model.write(System.out);
+    }
+
+    public Model getModel() {
+        return this.model;
     }
 }

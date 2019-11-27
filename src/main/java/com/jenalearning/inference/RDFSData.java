@@ -7,8 +7,8 @@ import org.apache.jena.rdf.model.Property;
 import org.apache.jena.vocabulary.RDFS;
 
 public class RDFSData {
-    private Model rdfsExample;
     public static final String NS = "urn:x-hp-jena:eg/";
+    private Model rdfsExample;
 
     public RDFSData() {
         /**
@@ -22,7 +22,7 @@ public class RDFSData {
         Property p = rdfsExample.createProperty(NS, "p");
         Property q = rdfsExample.createProperty(NS, "q");
         rdfsExample.add(p, RDFS.subPropertyOf, q);
-        rdfsExample.createResource(NS+"a").addProperty(p, "foo");
+        rdfsExample.createResource(NS + "a").addProperty(p, "foo");
     }
 
     public Model getModel() {

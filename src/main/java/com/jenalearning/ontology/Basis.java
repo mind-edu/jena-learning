@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 public class Basis {
 
-    public static  void  main (String[]args) {
+    public static void main(String[] args) {
 
         // 创建使用OWL语言的内存模型
         OntModel ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
@@ -27,10 +27,10 @@ public class Basis {
 
         // 迭代显示模型中的类，
         Iterator it = ontModel.listClasses();
-        while(it.hasNext()){
-            OntClass c = (OntClass)it.next();
+        while (it.hasNext()) {
+            OntClass c = (OntClass) it.next();
             // 如果不是匿名类
-            if(!c.isAnon()){
+            if (!c.isAnon()) {
                 System.out.print("Class");
 
                 // 获取类的URI，并输出
@@ -39,7 +39,7 @@ public class Basis {
             }
 
             // 处理Animal类
-            if(c.getLocalName().equals("Animal")) {
+            if (c.getLocalName().equals("Animal")) {
                 System.out.println("URI@" + c.getURI());
                 System.out.println("Animal's EquivalentClass is" + c.getEquivalentClass());
 

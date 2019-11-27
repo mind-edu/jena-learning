@@ -32,7 +32,7 @@ public class InfModelStore {
     public static void write() throws IOException {
         // 创建一个文件
         File f = new File("data/infmodel.ttl");
-        if(f.exists() == false) {
+        if (f.exists() == false) {
             f.createNewFile();
         }
         // 通过文件对象创建输出流
@@ -60,7 +60,6 @@ public class InfModelStore {
     /**
      * 从文件中读取InfModel（其实就是普通的rdf数据）
      * 进行查询。
-     *
      */
     public static void read() {
         Model inf = FileManager.get().loadModel("data/infmodel.ttl");
@@ -68,7 +67,7 @@ public class InfModelStore {
         System.out.println("查询示例： 实例识别");
         Resource gamingComputer = inf.getResource("urn:x-hp:eg/GamingComputer");
         Resource whiteBox = inf.getResource("urn:x-hp:eg/whiteBoxZX");
-        if(inf.contains(whiteBox, RDF.type, gamingComputer)) {
+        if (inf.contains(whiteBox, RDF.type, gamingComputer)) {
             System.out.println("White box recognized as gaming computer");
         } else {
             System.out.println("Failed to recognize white box correctly");
@@ -76,7 +75,7 @@ public class InfModelStore {
     }
 
 
-    public static void main(String []args) throws IOException {
+    public static void main(String[] args) throws IOException {
         System.out.println("写入infModel数据到文件中");
         write();
         System.out.println("读infModel数据，然后进行查询");
