@@ -1,4 +1,5 @@
-package inference;
+package com.jenalearning.inference;
+
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;

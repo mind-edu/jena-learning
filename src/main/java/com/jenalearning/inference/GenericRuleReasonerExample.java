@@ -1,4 +1,4 @@
-package inference;
+package com.jenalearning.inference;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;
@@ -9,7 +9,7 @@ import org.apache.jena.vocabulary.ReasonerVocabulary;
 
 public class GenericRuleReasonerExample {
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         // 注册一个命名空间
         String demoURI = "http://jena.hpl.hp.com/demo#";
         PrintUtil.registerPrefix("demo", demoURI);
@@ -61,7 +61,7 @@ public class GenericRuleReasonerExample {
         Resource a = data.getResource(demoURI + "a");
 
         StmtIterator i = inf.listStatements(a, p, (RDFNode) null);
-        while(i.hasNext()) {
+        while (i.hasNext()) {
             System.out.println(" - " + PrintUtil.print(i.nextStatement()));
         }
 

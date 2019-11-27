@@ -1,5 +1,6 @@
 package com.jenalearning.arq;
 
+
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Resource;
@@ -7,17 +8,17 @@ import org.apache.jena.util.FileManager;
 
 /**
  * ARQ中基础查询的例子，学习如何解析SPARQL查询语句，并且执行查询
- *
+ * <p>
  * 关键类有
- *
+ * <p>
  * 1. Query
  * 2. QueryFactory
  * 3. QueryExecution
  * 4. QueryExecutionFactory
  * 5. DatasetFactory
- *
+ * <p>
  * 查询之后，返回结果中的涉及的关键类有
- *
+ * <p>
  * 1. QuerySolution
  * 2. ResultSet
  * 3. ResultSetFormatter
@@ -46,7 +47,7 @@ public class QueryExample {
             ResultSet results = qexec.execSelect();
 
             // 遍历结果，进行处理
-            for(; results.hasNext() ; ) {
+            for (; results.hasNext(); ) {
                 // 获取每一条查询结果
                 QuerySolution soln = results.nextSolution();
                 Resource r = soln.getResource("mbox");
@@ -74,7 +75,7 @@ public class QueryExample {
             ResultSet results = qexec.execSelect();
 
             // 遍历结果，进行处理
-            for(; results.hasNext() ; ) {
+            for (; results.hasNext(); ) {
                 // 获取每一条查询结果
                 QuerySolution soln = results.nextSolution();
                 Resource r = soln.getResource("mbox");
@@ -85,7 +86,7 @@ public class QueryExample {
         }
     }
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
         System.out.println("------完整的查询流程---------");
         query();
         System.out.println("------简化的查询流程---------");
