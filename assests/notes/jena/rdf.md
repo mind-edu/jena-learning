@@ -1,6 +1,6 @@
 # RDF API
 
-完整的示例[在这里](../../rdf/)
+完整的示例[在这里](../../src/main/com.jena-learning/rdf/)
 
 ## 1. 概述
 

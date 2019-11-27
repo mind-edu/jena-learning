@@ -64,11 +64,11 @@ Jena是一个免费的、开源的Java平台上语义网开发框架。最初是
 
 示例：
 
-1. [RDF API](./rdf)
-2. [Ontology API](./ontology)
-3. [Inference API](./inference)
-4. [ARQ](./arq)
-5. [TDB](./tdb)
+1. [RDF API](src/main/com.jena-learning/rdf)
+2. [Ontology API](src/main/com.jena-learning/ontology)
+3. [Inference API](src/main/com.jena-learning/inference)
+4. [ARQ](src/main/com.jena-learning/arq)
+5. [TDB](src/main/com.jena-learning/tdb)
 
 ## 学习资料汇总
 

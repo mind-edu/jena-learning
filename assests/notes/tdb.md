@@ -15,7 +15,7 @@ TDB中提供`事务(transaction)`的机制，可以保证数据安全地进行�
 2. 连接TDB数据库
 3. 进行事务操作
 
-![完整示例](../tdb/TDBDatasetExample.java)
+![完整示例](../src/main/com.jena-learning/tdb/TDBDatasetExample.java)
 
 ### 1.2 批量导入Bulkloader
 
@@ -34,7 +34,7 @@ tdbloader.bat --loc database[tdb数据库目录] rdfFile[要导入的数据的�
 
 ![tdb-02](../images/tdbloader-results.png)
 
-我们在数据集上运行查询语句，[完整示例](../tdb/TDBQueryExample.java)
+我们在数据集上运行查询语句，[完整示例](../src/main/com.jena-learning/tdb/TDBQueryExample.java)
 
 ## 2. TDB的设计
 

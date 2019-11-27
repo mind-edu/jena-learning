@@ -16,7 +16,7 @@
  
 ## 2. SPARQL查询API
 
-[完整示例](../../arq/QueryExample.java)
+[完整示例](../../src/main/com.jena-learning/arq/QueryExample.java)
 
 
 

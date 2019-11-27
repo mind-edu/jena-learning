@@ -51,7 +51,7 @@ fuseki-server
 
 ![fuseki-database-upload.png](../images/fuseki-database-upload.png)
 
-根据提示，可以看到可以上传rdf格式的文件作为数据，我们选择了[data/example.rdf](../data/example.rdf)作为数据上传
+根据提示，可以看到可以上传rdf格式的文件作为数据，我们选择了[data/example.rdf](../src/main/resources/data/example.rdf)作为数据上传
 
 ![fuseki-upload-files.png](../images/fuseki-upload-files.png)
 

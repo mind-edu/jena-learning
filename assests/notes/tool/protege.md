@@ -44,7 +44,7 @@ Protégé是一个开源智能系统本体编辑和知识获取框架，包括�
 
 ![protege-05](../../images/protege-05.png)
 
-我们将这个作为数据，放入到[data](../../data)文件夹中，可以作为学习jena的ontology api的数据来源。
+我们将这个作为数据，放入到[data](../../src/main/resources/data)文件夹中，可以作为学习jena的ontology api的数据来源。
 
 
 
