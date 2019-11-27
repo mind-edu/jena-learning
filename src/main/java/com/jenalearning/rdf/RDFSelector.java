@@ -1,3 +1,6 @@
+package com.jeanlearning.rdf;
+
+
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.vocabulary.VCARD;

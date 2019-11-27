@@ -1,4 +1,4 @@
-package tdb;
+package com.jeanlearning.tdb;
 
 import org.apache.jena.query.Dataset;
 import org.apache.jena.query.ReadWrite;

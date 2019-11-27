@@ -1,4 +1,4 @@
-package ontology;
+package com.jenalearning.ontology;
 
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;

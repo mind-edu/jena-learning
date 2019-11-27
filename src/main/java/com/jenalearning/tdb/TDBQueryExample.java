@@ -1,4 +1,5 @@
-package tdb;
+package com.jeanlearning.tdb;
+
 
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;

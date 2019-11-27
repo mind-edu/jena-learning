@@ -1,3 +1,6 @@
+package com.jeanlearning.rdf;
+
+
 import org.apache.jena.rdf.model.*;
 
 public class RDFIterator {

@@ -1,3 +1,6 @@
+package com.jeanlearning.rdf;
+
+
 import org.apache.jena.rdf.model.InfModel;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
