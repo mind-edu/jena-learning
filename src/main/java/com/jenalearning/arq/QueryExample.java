@@ -1,4 +1,4 @@
-package com.jena-learning.arq;
+package com.jenalearning.arq;
 
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
