@@ -4,7 +4,7 @@
 
 Jena是一个免费的、开源的Java平台上语义网开发框架。最初是由惠普实验室(HPL)的BrianMcBride开发，后来Jena称为Apache开源项目之一。
 
-![jena](./images/jena.png)
+![jena](./assests/images/jena.png)
 
 结合整体架构图和Jena的官方文档，可以看到Jena框架共分为几大模块：
 
@@ -22,37 +22,37 @@ Jena是一个免费的、开源的Java平台上语义网开发框架。最初是
 
 1. RDF API
 
-    * [RDF简介](./semantic/rdf.md)
-    * [RDF API使用示例](./jena/rdf.md)
+    * [RDF简介](./assests/notes/semantic/rdf.md)
+    * [RDF API使用示例](./assests/notes/jena/rdf.md)
 
 2. Ontology API
 
-    * [owl](./notes/semantic/owl.md)
-    * [Protégé](./notes/tools/protege.md)
-    * [Ontology API](./notes/jena/ontology.md)
+    * [owl](./assests/notes/semantic/owl.md)
+    * [Protégé](./assests/notes/tools/protege.md)
+    * [Ontology API](./assests/notes/jena/ontology.md)
     
 3. Inference API
 
-    * [inference](./notes/inference.md)
-    * [reasoner](./notes/reasoner.md)
+    * [inference](./assests/notes/inference.md)
+    * [reasoner](./assests/notes/reasoner.md)
 
 4.  ARQ
 
-    * [SPARQL](./notes/sparql)
-    * [ARQ](./notes/jena/arq.md)
+    * [SPARQL](./assests/notes/sparql)
+    * [ARQ](./assests/notes/jena/arq.md)
 
-5. [TDB](./notes/tdb.md)
+5. [TDB](./assests/notes/tdb.md)
 
-    * [TDB Assembler](./notes/tdb-assember.md)
-    * [TDB Dynamic Datasets](./notes/tdb-dynamic-dataset.md)
+    * [TDB Assembler](./assests/notes/tdb-assember.md)
+    * [TDB Dynamic Datasets](./assests/notes/tdb-dynamic-dataset.md)
 
 ## Fuseki
 
-[Fuseki](./notes/fuseki.md)
+[Fuseki](./assests/notes/fuseki.md)
 
 ## Jena的整体web流程框架
 
-![jena-complete](./images/jena-webflow.jpg)
+![jena-complete](./assests/images/jena-webflow.jpg)
 
 
 ## 代码示例
