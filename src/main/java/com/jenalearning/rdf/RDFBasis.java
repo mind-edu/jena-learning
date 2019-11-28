@@ -15,6 +15,7 @@ public class RDFBasis {
     private Model model;
 
     public RDFBasis() {
+        // 创造了一个模型 Model
         this.model = ModelFactory.createDefaultModel();
 
         Resource johnSmith = model.createResource(personURI);
